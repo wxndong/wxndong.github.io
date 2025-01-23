@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: web_icon # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: web_icon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://wxndong.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -181,7 +181,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages/about.md", "_scripts"]
+include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -197,8 +197,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/404.md
-  - _pages/about_einstein.md
   - _pages/blog.md
   - _pages/cv.md
   - _pages/dropdown.md
