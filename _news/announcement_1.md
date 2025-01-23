@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Blog fixed finally :sparkles: :smile:
+Blog fixed finally :smile:
