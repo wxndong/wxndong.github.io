@@ -48,7 +48,7 @@ rss_icon: true
 # Layout
 # -----------------------------------------------------------------------------
 # 2025.1.24 update
-navbar_fixed: true
+navbar_fixed: false
 footer_fixed: true
 search_enabled: false
 socials_in_search: true
