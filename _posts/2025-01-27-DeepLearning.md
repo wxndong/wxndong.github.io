@@ -407,7 +407,7 @@ $$Attention(Q,K,V)=Softmax(\frac{QK^T}{\sqrt{d_k}})V$$
 
 ### 4.7.5 注意力分数：
 
-- 【注意力机制的本质|Self-Attention|Transformer|QKV矩阵】 https://www.bilibili.com/video/BV1dt4y1J7ov/?share_source=copy_web&vd_source=844d5686586c898323ef108d7a5f4a16
+【注意力机制的本质 Self-Attention Transformer QKV矩阵】 https://www.bilibili.com/video/BV1dt4y1J7ov/?share_source=copy_web&vd_source=844d5686586c898323ef108d7a5f4a16
 
 ### 4.7.6 seq2seq结合注意力机制
 
