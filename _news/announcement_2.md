@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-01-24 04:03:00-0800
+date: 2025-01-27 19:00:00-0800
 inline: true
 related_posts: false
 ---
 
-Going to slepp :zzz:
+Uploaded a blog post about deep learning[深度学习笔记](../posts/DeepLearning/)
