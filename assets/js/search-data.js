@@ -33,9 +33,6 @@ ninja.data = [{
           section: "News",},{id: "news-uploaded-a-blog-post-about-deep-learning深度学习笔记",
           title: 'Uploaded a blog post about deep learning深度学习笔记',
           description: "",
-          section: "News",},{id: "news-2025新年快乐-祝自己考研一战上岸浙软-梦想成真",
-          title: '🎉2025新年快乐！🎉 📚✨祝自己考研一战上岸浙软，梦想成真！📚✨',
-          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
