@@ -14,7 +14,5 @@ I am seeking graduate opportunities to receive rigorous academic training, work 
 ## News
 
 - **[March, 2025]** One technical report paper is accepted by [ALP2025](https://www.ancientnlp.com/alp2025/) (NAACL2025 Workshop).
-
 - **[March, 2025]** Launched an open-source project : [Intelligent Academic Paper Retrieval and Q&A System](https://huggingface.co/spaces/wxndong/RAGPaperBot)
-
 - **[February, 2025]** Introduced an open-source project : [Multi-Strategy Named Entity Recognition System for Ancient Chinese](https://github.com/wxndong/MSNER4AC)
