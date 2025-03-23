@@ -4,7 +4,7 @@
 body {
   background-color: #fff;
   padding:0px;
-  font: 16.0px/1.5 Crimson Pro, serif; 
+  font: 18.0px/1.5 Crimson Pro, serif; 
   color:#595959;
   font-weight:400;
   margin:0
@@ -228,8 +228,8 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
-        width: 100%;
-        padding: 0;
+        width: 45%;
+        padding: 20px;
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
@@ -257,15 +257,6 @@ h2 {
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

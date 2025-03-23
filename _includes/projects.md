@@ -40,12 +40,12 @@
             <!-- 被注释掉的PDF链接，指向arXiv论文 -->
             <!-- <a href="https://arxiv.org/abs/2303.17580" class="btn-badge"><img src="https://img.shields.io/badge/arXiv-2303.17580-009922.svg?style=flat-square"></a> -->
             <!-- 被注释掉的arXiv徽章，显示论文编号 -->
-            <a href="https://huggingface.co/spaces/wxndong/RAGPaperBot" class="btn-badge"><img src="https://img.shields.io/badge/%F0%9F%A4%97 - Demo -green?style=flat-square"></a>
-            <!-- 活跃的演示链接，使用徽章显示Hugging Face标志 -->
             <!-- <a href="https://www.semanticscholar.org/paper/HuggingGPT%3A-Solving-AI-Tasks-with-ChatGPT-and-its-Shen-Song/bf54ccf6e5c9a7da47a0909471002881913f02ba" class="btn-badge"><img src="https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/bf54ccf6e5c9a7da47a0909471002881913f02ba?fields=citationCount&style=flat-square&logo=semanticscholar"></a> -->
             <!-- 被注释掉的引用统计徽章，动态获取Semantic Scholar数据 -->
-            <a href="https://github.com/wxndong/RAGPaperBot" class="btn-badge"><img src="https://img.shields.io/github/stars/microsoft/JARVIS?style=social&label=stars"></a>
-            <!-- 被注释掉的GitHub星标徽章，显示仓库受欢迎程度 -->
+            <a href="https://github.com/wxndong/RAGPaperBot" class="btn-badge"><img src="https://img.shields.io/github/stars/wxndong/RAGPaperBot?style=social&label=stars"></a>
+            <!-- GitHub星标徽章，显示仓库受欢迎程度 -->
+            <a href="https://huggingface.co/spaces/wxndong/RAGPaperBot" class="btn-badge"><img src="https://img.shields.io/badge/%F0%9F%A4%97 - Demo -green?style=flat-square"></a>
+            <!-- 活跃的演示链接，使用徽章显示Hugging Face标志 -->
             <!-- <strong><i style="color:#e74d3c">Oral Presentation</i></strong> -->
             <!-- 被注释掉的口头报告标记，使用红色高亮 -->
           </div>
