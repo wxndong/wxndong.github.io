@@ -2,7 +2,9 @@
 
 I am currently a senior undergraduate student majoring in Computer Science at [Northeast Forestry University](https://www.nefu.edu.cn/), graduating in 2025. My research interests include **LLM (Large Language Model)** and  **AI agents**.
 
-I am eager to explore opportunities to become an academic graduate researcher. Feel free to reach out to me via [Email](mailto:wxndong@gmail.com) or [WeChat](assets/img/weixin.jpg).
+Personal Keywords: Inquisitive, self-motivated, collaborative, and emotionally balanced. I truly relish tackling demanding research challenges, devising creative solutions, and engaging in substantive academic dialogue.
+
+I am seeking graduate opportunities to receive rigorous academic training, work with outstanding researchers, and make meaningful contributions to the field. If my background and interests align with your expertise, I would greatly appreciate the opportunity to connect via [Email](mailto:wxndong@gmail.com) or [WeChat](assets/img/weixin.jpg).
 
 ## Research Interests
 
@@ -13,6 +15,6 @@ I am eager to explore opportunities to become an academic graduate researcher. F
 
 - **[March, 2025]** One technical report paper is accepted by [ALP2025](https://www.ancientnlp.com/alp2025/) (NAACL2025 Workshop).
 
-- **[March, 2025]** Launched an open-source project:[Intelligent Academic Paper Retrieval and Q&A System](https://huggingface.co/spaces/wxndong/RAGPaperBot)
+- **[March, 2025]** Launched an open-source project : [Intelligent Academic Paper Retrieval and Q&A System](https://huggingface.co/spaces/wxndong/RAGPaperBot)
 
-- **[February, 2025]** Introduced an open-source project: [Multi-Strategy Named Entity Recognition System for Ancient Chinese](https://github.com/wxndong/MSNER4AC)
+- **[February, 2025]** Introduced an open-source project : [Multi-Strategy Named Entity Recognition System for Ancient Chinese](https://github.com/wxndong/MSNER4AC)
