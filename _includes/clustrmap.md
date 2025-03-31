@@ -1,3 +1,3 @@
-<div class="clustrmap-container" style="width:100%; max-width:200px; height:100px; margin:2rem auto">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=osRdA-LR5ZPD5UCgDQemAdMQuSVXjlPGsi2GTJNAtWM"></script>
+<div class="clustrmap-container">
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=osRdA-LR5ZPD5UCgDQemAdMQuSVXjlPGsi2GTJNAtWM&cl=ffffff&w=a"></script>
 </div>
