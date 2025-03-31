@@ -99,7 +99,3 @@
 
   </ol>
 </div>
-
-<div class="clustrmap-container" style="width:80%; max-width:800px; height:400px; margin:2rem auto">
-  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=osRdA-LR5ZPD5UCgDQemAdMQuSVXjlPGsi2GTJNAtWM"></script>
-</div>

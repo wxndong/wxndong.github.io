@@ -8,6 +8,7 @@ layout: homepage
 
 {% include_relative _includes/awards.md %}
 
+{% include_relative _includes/clustrmap.md %}
 
 
 
