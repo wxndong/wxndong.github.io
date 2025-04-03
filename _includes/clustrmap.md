@@ -1,4 +1,4 @@
-<h2 id="misc" style="margin: -20px 0px 15px;">MISC</h2>
+<h2 id="misc" style="margin: 2px 0px 15px;">MISC</h2>
 
 这个世界不凸，也没有最优解。步步求局部最优，结果未必全局最优。
 
