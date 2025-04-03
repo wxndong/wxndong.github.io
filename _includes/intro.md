@@ -6,6 +6,8 @@ Personal Keywords: Inquisitive, self-motivated, collaborative, and emotionally b
 
 I am seeking graduate opportunities to receive rigorous academic training, work with outstanding researchers, and make meaningful contributions to the field. If my background and interests align with your expertise, I would greatly appreciate the opportunity to connect via [Email](mailto:wxndong@gmail.com) or [WeChat](assets/img/weixin.jpg).
 
+> 这个世界不凸，也没有最优解。步步求局部最优，结果未必全局最优。
+
 ## Research Interests
 
 - **Large Language Models**, especially on the capabilities of large language models (LLMs) for reasoning, planning, and execution, focusing on the controllability, interpretability, and efficiency of LLMs. Self-reflective, self-improving and self-evolving LLMs are also of interest.
