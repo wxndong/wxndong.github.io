@@ -4,7 +4,7 @@ I am currently a senior undergraduate student majoring in Computer Science at [N
 
 Personal Keywords: Inquisitive, self-motivated, collaborative, and emotionally balanced. I truly relish tackling demanding research challenges, devising creative solutions, and engaging in substantive academic dialogue.
 
-I am seeking graduate opportunities to receive rigorous academic training, work with outstanding researchers, and make meaningful contributions to the field. If my background and interests align with your expertise, I would greatly appreciate the opportunity to connect via [Email](mailto:wxndong@gmail.com) or [WeChat](assets/img/weixin.jpg).
+I am actively seeking opportunities to collaborate with leading researchers and contribute meaningfully to cutting-edge projects in my field. If my background and research interests align with your work, I would be grateful for the opportunity to connect. Please feel free to reach out via [Email](mailto:wxndong@gmail.com) or [WeChat](assets/img/weixin.jpg).
 
 ## Research Interests
 
