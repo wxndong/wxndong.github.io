@@ -67,7 +67,7 @@
 
         <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
           <!-- 右侧详细信息区域 -->
-          <div class="title"><a href="https://www.ancientnlp.com/alp2025/accepted_papers/">Multi-Strategy Named Entity Recognition System for Ancient Chinese</a></div>
+          <div class="title"><a href="https://aclanthology.org/2025.alp-1.28/">Multi-Strategy Named Entity Recognition System for Ancient Chinese</a></div>
           <!-- 项目标题，链接到ALP会议接受论文页面 -->
           <div class="author"><strong>Wenxuan Dong</strong>, Meiling Liu#</div>
           <!-- 作者姓名，包含主要贡献者和通讯作者标记 -->
