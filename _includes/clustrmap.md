@@ -1,11 +1,8 @@
 <h2 id="misc" style="margin: 2px 0px 15px;">MISC</h2>
 
 感受-思考-行动，知行合一！
-
 - Dream big, believe you can change the world.
-
 - Have the courage to take risks, and enthusiastically learn from these mistakes.
-
 - Work damn hard, to solve the world's toughest problems!
 
 <div class="clustrmap-container">
