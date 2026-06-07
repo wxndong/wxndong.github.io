@@ -136,12 +136,16 @@ img {
 
 .top-nav {
     position: fixed;
-    inset: 0 0 auto;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
     z-index: 10;
     min-height: 48px;
     border-bottom: 1px solid var(--subtle);
     background: var(--bg);
     background: color-mix(in srgb, var(--bg) 94%, transparent);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     font-family: var(--mono);
 }
@@ -181,6 +185,10 @@ img {
     font-size: 13px;
     font-weight: 500;
     line-height: 1.2;
+}
+
+.top-nav a:hover {
+    color: var(--accent);
 }
 
 .top-nav a.active {

@@ -4,6 +4,8 @@ title: Home
 navbar_title: Home
 ---
 
+{% assign display = site.data.display.homepage %}
+
 <section class="intro" aria-label="Profile">
     <h1 class="name">Wenxuan Dong</h1>
     <div class="contact-links" aria-label="Contact links">
@@ -13,24 +15,17 @@ navbar_title: Home
         <a href="#" aria-label="Twitter placeholder">Twitter</a>
     </div>
 
-    <div class="bio">
-        <p>
-            I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noreferrer">ShanghaiTech University</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/" target="_blank" rel="noreferrer">Northeast Forestry University</a>.
-        </p>
-        <p>My research interests include:</p>
-        <ul class="interest-list">
-            <li><strong>Agentic AI</strong>, with a focus on agentic post-training, reasoning-centric reinforcement learning, and self-improving agents.</li>
-            <li><strong>Native Multimodal AI</strong>, with a focus on multimodal reasoning, generation, and world understanding.</li>
-            <li><strong>AI for EDA</strong>, with a focus on computational lithography and design for manufacturability.</li>
-        </ul>
+    <div class="bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+        {{ site.data.profile.short_bio }}
     </div>
 </section>
 
+{% if display.show_news %}
 <section class="section" aria-labelledby="news-title">
     <h2 class="section-title" id="news-title">News</h2>
     {% assign news_items = site.news | sort: "date" | reverse %}
     <div class="timeline-list">
-        {% for item in news_items %}
+        {% for item in news_items limit: display.num_news %}
         <div class="timeline-item">
             <div class="timeline-date">{{ item.date | date: "%Y.%m" }}</div>
             <div>{{ item.title }}</div>
@@ -38,7 +33,9 @@ navbar_title: Home
         {% endfor %}
     </div>
 </section>
+{% endif %}
 
+{% if display.show_selected_publications %}
 <section class="section" aria-labelledby="publications-title">
     <h2 class="section-title" id="publications-title">Publications</h2>
     {% assign pubs = site.publications | sort: "date" | reverse %}
@@ -48,7 +45,9 @@ navbar_title: Home
         {% endfor %}
     </div>
 </section>
+{% endif %}
 
+{% if display.show_experience %}
 <section class="section" aria-labelledby="education-title">
     <h2 class="section-title" id="education-title">Education</h2>
     <div class="education-list">
@@ -68,6 +67,7 @@ navbar_title: Home
         {% endfor %}
     </div>
 </section>
+{% endif %}
 
 <section class="section" aria-labelledby="awards-title">
     <h2 class="section-title" id="awards-title">Honors &amp; Awards</h2>

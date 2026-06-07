@@ -3,7 +3,7 @@
         <a class="nav-brand" href="{{ '/' | relative_url }}">{{ site.data.profile.navbar_name }}</a>
         <div class="nav-actions">
             {% for item in site.data.navigation.pages %}
-            <a href="{{ item.url | relative_url }}" {% if item.name == page.navbar_title %}class="active"{% endif %}>
+            <a href="{{ item.url | relative_url }}" {% if item.name == page.navbar_title %}class="active" aria-current="page"{% endif %}>
                 {{ item.name }}
             </a>
             {% endfor %}

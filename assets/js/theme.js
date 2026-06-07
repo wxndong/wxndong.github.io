@@ -10,7 +10,7 @@
     function applyTheme(theme, persist) {
         root.setAttribute("data-theme", theme);
         if (persist) {
-            localStorage.setItem("theme", theme);
+            try { localStorage.setItem("theme", theme); } catch(e) {}
         }
         if (button) {
             button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");

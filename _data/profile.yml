@@ -12,20 +12,19 @@ cv_link: /assets/files/curriculum_vitae.pdf
 gscholar: "#"
 github: wxndong
 twitter: "#"
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 linkedin: wenxuan-dong-973485301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-# orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/">ShanghaiTech University</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/">Northeast Forestry University</a>.
+    I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noreferrer">ShanghaiTech University</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/" target="_blank" rel="noreferrer">Northeast Forestry University</a>.
   </p>
-  <p>
-    My research interests include multimodal large language models, agentic AI, and AI for EDA.
-  </p>
+  <p>My research interests include:</p>
+  <ul class="interest-list">
+    <li><strong>Agentic AI</strong>, with a focus on agentic post-training, reasoning-centric reinforcement learning, and self-improving agents.</li>
+    <li><strong>Native Multimodal AI</strong>, with a focus on multimodal reasoning, generation, and world understanding.</li>
+    <li><strong>AI for EDA</strong>, with a focus on computational lithography and design for manufacturability.</li>
+  </ul>
 
 
 portrait_url: /assets/images/photos/portrait.jpg
