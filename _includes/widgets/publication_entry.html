@@ -1,0 +1,27 @@
+{% assign item = include.item %}
+<article class="publication">
+    <div class="publication-media">
+        {% if item.cover %}
+        <img src="{{ item.cover | relative_url }}" alt="Thumbnail for {{ item.title }}" loading="lazy">
+        {% else %}
+        <div class="publication-placeholder" aria-hidden="true"></div>
+        {% endif %}
+    </div>
+    <div class="publication-content">
+        <h3 class="publication-title">{{ item.title }}</h3>
+        <p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+        {% assign venue_label = item.venue_short | default: item.venue | default: item.pub %}
+        <p class="publication-venue"><span class="publication-venue-badge">{{ venue_label }}</span></p>
+        {% if item.links %}
+        <div class="publication-links" aria-label="Publication links">
+            {% for link in item.links %}
+            {% if link[1].url %}
+            <a target="{{ link[1].target | default: '_blank' }}" rel="noreferrer" href="{{ link[1].url }}">{{ link[0] }}</a>
+            {% else %}
+            <a target="_blank" rel="noreferrer" href="{{ link[1] }}">{{ link[0] }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</article>

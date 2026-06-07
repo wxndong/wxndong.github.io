@@ -1,74 +1,103 @@
-# academic-homepage
+# Wenxuan Dong Academic Homepage
 
-![Preview](assets/images/etc/preview.png)
+This repository contains the source for <https://wxndong.github.io/>.
 
-[![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
-[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)](https://validator.nu/?doc=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)
-[![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
-[![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/forks)
-<!-- [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fluost26%2Facademic-homepage&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) -->
+The site is a lightweight Jekyll academic homepage designed for GitHub Pages. It uses semantic HTML, static Liquid templates, and a small custom CSS file. No backend service or frontend framework is required.
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost.me/academic-homepage/) to see the demo.
+## Local Preview
 
-## User Community
+Install Ruby and Bundler, then run:
 
-[🏡](https://luost.me/)
-[:star:](https://cch1999.github.io/)
-[:star:](https://kyrrego.github.io/)
-[:star:](https://ced3-han.github.io/)
-[:star:](https://lihengchen.com/)
-[:star:](https://hpwang-whu.github.io/)
-[:star:](https://zhang-yingyi.github.io/)
-[:star:](https://wby24.github.io/)
-[:star:](https://pengfeixu.com/)
-[:star:](https://boqiuphd.github.io/)
-[:star:](https://www.huabing.li/)
-[:star:](https://xiecuiying.github.io/)
-[:star:](https://hannyang.github.io/)
-[:star:](https://king-play.github.io/)
-[🤖](https://andrewcwlee.github.io)
-[:star:](https://laiyao1.github.io)
-[🌜](https://tmsultan.github.io)
-[🚀](https://zaxguo.github.io)
-[:gemini:](https://hongyang-du.github.io)
-[🇻‍🇳](https://thuanz123.github.io)
-[🧬](https://gdalba.github.io/)
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-:hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
+Open the local URL printed by Jekyll, usually:
 
+```text
+http://127.0.0.1:4000/
+```
 
-## Need Help?
+Jekyll watches the source files while the server is running. After editing text, save the file and refresh the browser.
 
-If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
+If `bundle` is not available:
 
-### FAQs
-- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
+```bash
+gem install bundler
+bundle install
+bundle exec jekyll serve
+```
 
+## GitHub Pages Deployment
 
-## Getting Started
+This repository is compatible with GitHub Pages as a user site.
 
-1. First, fork this repository or click the "Use this template" button to create a new repository. The name of the repository should be `<your-github-username>.github.io` (click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) to learn more about naming a GitHub Pages repository).
-   - If you plan to customize the functionality or style of the template, and do not want to get updates from this repository, choose "Use this template".
-   - If you plan to only edit the content (biography, publications, news, etc.), and would like to get updates from this repository, choose "Fork".
-   - If you want to contribute to this project, fork the repository and submit a pull request.
+1. Push changes to the `main` branch of `wxndong/wxndong.github.io`.
+2. In GitHub, open `Settings` -> `Pages`.
+3. Set the source to deploy from the repository branch, usually `main` and `/`.
+4. After the Pages workflow completes, the site is available at <https://wxndong.github.io/>.
 
-### Running Locally (Debug & Preview)
+## Content Maintenance
 
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
+- Home biography: edit `index.html`.
+- Profile, education, and awards data: edit `_data/profile.yml`.
+- Navigation: edit `_data/navigation.yml`.
+- News: add or edit Markdown files in `_news/`.
+- Publications: add or edit Markdown files in `_publications/`.
+- Global styling: edit `assets/css/global.css`.
+- Theme toggle behavior: edit `assets/js/theme.js`.
 
-3. Clone your forked repository to your local machine.
+Publication entries support the existing metadata fields:
 
-4. Run the following command in the root directory of the repository:
+- `title`
+- `date`
+- `pub`
+- `pub_date`
+- `pub_last`
+- `venue_short`
+- `abstract`
+- `cover`
+- `authors`
+- `links`
 
-   ```bash
-   bundle exec jekyll serve
-   ```
+Use `venue_short` for the compact venue label shown on the homepage, for example `ALP 2025`. Use `#` at the end of an author name in a publication entry to render the corresponding-author marker as `†`.
 
-5. Browse to the displayed URL to see the website.
+## Editing Workflow
 
-### Deploying to GitHub Pages
+For text-only changes:
 
-2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+1. Start the preview server with `bundle exec jekyll serve`.
+2. Edit the relevant file.
+3. Refresh `http://127.0.0.1:4000/`.
+4. Check both light and dark modes with the navbar theme button.
 
-3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
+For publication changes, edit or add a file under `_publications/`. A minimal entry looks like:
 
+```yaml
+---
+title: "Paper Title"
+date: 2026-01-01 00:00:00 +0800
+venue_short: "Conference 2026"
+cover: /assets/images/covers/example.png
+authors:
+  - Wenxuan Dong
+links:
+  Paper: https://example.com
+---
+```
+
+Before deployment, run:
+
+```bash
+bundle exec jekyll build
+```
+
+## Redesign Summary
+
+- Rebuilt the homepage into a single-column academic CV layout.
+- Added light and dark modes with a small navbar toggle; the default follows `prefers-color-scheme`.
+- Switched typography to JetBrains Mono for navigation, section titles, and name; Inter for body text.
+- Standardized link colors with a purple light theme accent and a cyan dark theme accent.
+- Reworked Publications, News, Education, and Honors & Awards into responsive academic list layouts.
+- Removed unnecessary Bootstrap, jQuery, Masonry, carousel, and visual-effect dependencies from the main layout.
