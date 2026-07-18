@@ -17,13 +17,13 @@ linkedin: wenxuan-dong-973485301?utm_source=share&utm_campaign=share_via&utm_con
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noreferrer">ShanghaiTech University</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/" target="_blank" rel="noreferrer">Northeast Forestry University</a>.
+    I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noreferrer">ShanghaiTech University</a>, advised by <a href="https://true-genghao.github.io/genghao/" target="_blank" rel="noreferrer">Prof. Hao Geng</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/" target="_blank" rel="noreferrer">Northeast Forestry University</a>.
   </p>
   <p>My research interests include:</p>
   <ul class="interest-list">
     <li><strong>Agentic AI</strong>, with a focus on agentic post-training, reasoning-centric reinforcement learning, and self-improving agents.</li>
-    <li><strong>Native Multimodal AI</strong>, with a focus on multimodal reasoning, generation, and world understanding.</li>
-    <li><strong>AI for EDA</strong>, with a focus on computational lithography and design for manufacturability.</li>
+    <li><strong>Multimodal Large Language Models (MLLMs)</strong>, with a focus on multimodal reasoning, generation, and world understanding.</li>
+    <li><strong>AI for EDA</strong>, with a focus on large models for efficient, accurate, and automated EDA workflows.</li>
   </ul>
 
 
@@ -52,6 +52,8 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
+- name: University Scholarship, ShanghaiTech University
+  date: 2026, 2025
 - name: Outstanding Graduation Thesis (Top 3%)
   date: 2025
 - name: Third Prize, CCPC Provincial Competition
@@ -62,5 +64,5 @@ awards:
 #   date: 2023
 # - name: Silver Medal, Baidu Star Provincial Competition
 #   date: 2023
-- name: University Scholarship
+- name: University Scholarship, Northeast Forestry University
   date: 2023, 2022
