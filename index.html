@@ -10,6 +10,9 @@ navbar_title: Home
     <h1 class="name">Wenxuan Dong</h1>
     <div class="contact-links" aria-label="Contact links">
         <a href="mailto:{{ site.data.profile.email }}">Email</a>
+        {% if site.data.profile.cv_link %}
+        <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" rel="noreferrer">CV</a>
+        {% endif %}
         <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noreferrer">GitHub</a>
         <a href="#" aria-label="Google Scholar placeholder">Google Scholar</a>
         <a href="#" aria-label="Twitter placeholder">Twitter</a>
