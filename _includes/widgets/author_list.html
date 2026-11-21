@@ -4,13 +4,13 @@
     {%- assign last_2chars = _key | slice: -2, 2%}
     {%- if last_2chars == "*#" or last_2chars == "#*" -%}
         {%- assign key = _key | replace: "#*", "" | replace: "*#", "" -%}
-        {%- assign mark = "*<sup>†</sup>" -%}
+        {%- assign mark = '<sup aria-label="equal contribution">*</sup><sup aria-label="corresponding author">†</sup>' -%}
     {%- elsif last_char == "*" -%}
         {%- assign key = _key | split: "*" | first -%}
-        {%- assign mark = "*" -%}
+        {%- assign mark = '<sup aria-label="equal contribution">*</sup>' -%}
     {%- elsif last_char == "#" -%}
         {%- assign key = _key | split: "#" | first -%}
-        {%- assign mark = '<sup>†</sup>' -%}
+        {%- assign mark = '<sup aria-label="corresponding author">†</sup>' -%}
     {%- else -%}
         {%- assign key = _key -%}
         {%- assign mark = "" -%}

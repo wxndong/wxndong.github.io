@@ -1,27 +1,26 @@
 {% assign item = include.item %}
-<article class="publication">
-    <div class="publication-media">
-        {% if item.cover %}
-        <img src="{{ item.cover | relative_url }}" alt="Thumbnail for {{ item.title }}" loading="lazy">
+{% assign venue = item.venue_short %}
+{% assign paper_url = item.links.Paper %}
+<article class="paper{% unless item.cover %} paper--text-only{% endunless %}"{% if item.selected == true %} data-selected{% else %} hidden{% endif %}>
+    {% if item.cover %}
+        {% if paper_url %}
+    <a class="paper-media" href="{{ paper_url }}" target="_blank" rel="noreferrer" aria-label="Paper: {{ item.title | escape }}">
         {% else %}
-        <div class="publication-placeholder" aria-hidden="true"></div>
+    <div class="paper-media">
         {% endif %}
-    </div>
-    <div class="publication-content">
-        <h3 class="publication-title">{{ item.title }}</h3>
-        <p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
-        {% assign venue_label = item.venue_short | default: item.venue | default: item.pub %}
-        <p class="publication-venue"><span class="publication-venue-badge">{{ venue_label }}</span></p>
-        {% if item.links %}
-        <div class="publication-links" aria-label="Publication links">
+        <img src="{{ item.cover | relative_url }}" alt="{{ item.title | split: ':' | first | escape }} paper figure" loading="lazy"{% if item.cover_position %} style="object-position: {{ item.cover_position | escape }}"{% endif %}>
+        <span class="paper-badge" aria-hidden="true">{{ venue }}</span>
+        {% if paper_url %}</a>{% else %}</div>{% endif %}
+    {% endif %}
+    <div class="paper-details">
+        <p class="paper-venue">{{ venue }}</p>
+        <h3>{{ item.title }}</h3>
+        <p class="authors">{% include widgets/author_list.html authors=item.authors %}</p>
+        <div class="paper-links" aria-label="Publication links">
+            {% unless paper_url %}<span class="paper-link-placeholder" role="link" aria-disabled="true">Paper</span>{% endunless %}
             {% for link in item.links %}
-            {% if link[1].url %}
-            <a target="{{ link[1].target | default: '_blank' }}" rel="noreferrer" href="{{ link[1].url }}">{{ link[0] }}</a>
-            {% else %}
-            <a target="_blank" rel="noreferrer" href="{{ link[1] }}">{{ link[0] }}</a>
-            {% endif %}
+            <a href="{{ link[1] }}" target="_blank" rel="noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>
             {% endfor %}
         </div>
-        {% endif %}
     </div>
 </article>

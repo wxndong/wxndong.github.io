@@ -1,34 +1,32 @@
-(function() {
-    var root = document.documentElement;
-    var button = document.querySelector(".theme-toggle");
-    var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    function currentTheme() {
-        return root.getAttribute("data-theme") || (mediaQuery.matches ? "dark" : "light");
+(() => {
+    const root = document.documentElement;
+    const toggle = document.querySelector(".theme-toggle");
+    const system = window.matchMedia("(prefers-color-scheme: dark)");
+    const storageKey = "theme";
+    let preference;
+    try {
+        preference = localStorage.getItem(storageKey);
+    } catch {
+        // The preview also works when browser storage is unavailable.
     }
 
-    function applyTheme(theme, persist) {
-        root.setAttribute("data-theme", theme);
-        if (persist) {
-            try { localStorage.setItem("theme", theme); } catch(e) {}
-        }
-        if (button) {
-            button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
-            button.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
-        }
+    function applyTheme() {
+        const systemTheme = system.matches ? "dark" : "light";
+        const theme = preference === "light" || preference === "dark" ? preference : systemTheme;
+        root.dataset.theme = theme;
+        toggle.setAttribute("aria-pressed", String(theme === "dark"));
     }
 
-    applyTheme(currentTheme(), false);
-
-    if (button) {
-        button.addEventListener("click", function() {
-            applyTheme(currentTheme() === "dark" ? "light" : "dark", true);
-        });
-    }
-
-    mediaQuery.addEventListener("change", function(event) {
-        if (!localStorage.getItem("theme")) {
-            applyTheme(event.matches ? "dark" : "light", false);
+    toggle.addEventListener("click", () => {
+        preference = root.dataset.theme === "dark" ? "light" : "dark";
+        applyTheme();
+        try {
+            localStorage.setItem(storageKey, preference);
+        } catch {
+            // Keep the selected theme for the current page.
         }
     });
+
+    system.addEventListener("change", applyTheme);
+    applyTheme();
 })();

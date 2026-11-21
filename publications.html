@@ -1,19 +1,7 @@
 ---
-layout: default
-title: Publications
-navbar_title: Publications
+layout: null
 ---
-
-<h1 class="page-title">Publications</h1>
-
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
-{% for year in pubs_by_year %}
-<section class="year-block" aria-labelledby="year-{{ year.name }}">
-    <h2 class="year-heading" id="year-{{ year.name }}">{{ year.name }}</h2>
-    <div class="publication-list">
-        {% for item in year.items %}
-        {% include widgets/publication_entry.html item=item %}
-        {% endfor %}
-    </div>
-</section>
-{% endfor %}
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url={{ '/#research' | relative_url }}">
+<title>Research</title><a href="{{ '/#research' | relative_url }}">Research</a></html>

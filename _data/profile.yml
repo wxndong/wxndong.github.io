@@ -1,55 +1,13 @@
 primary_name: "Wenxuan Dong"
-secondary_name: ""
-navbar_name: "Wenxuan Dong"
-
-positions:
-- logo: /assets/images/badges/ShanghaiTech_FLAG.png
-  name: M.S. Student, ShanghaiTech University
-
-
+last_updated: "2026-11-21"
 email: "wxndong@gmail.com"
 cv_link: /assets/files/curriculum_vitae.pdf
-gscholar: "#"
 github: wxndong
-twitter: "#"
-linkedin: wenxuan-dong-973485301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
-short_bio_text_justify: false
 short_bio: >-
-  <p>
-    I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" target="_blank" rel="noreferrer">ShanghaiTech University</a>, advised by <a href="https://true-genghao.github.io/genghao/" target="_blank" rel="noreferrer">Prof. Hao Geng</a>. Prior to that, I received my B.Eng. degree in Computer Science from <a href="https://www.nefu.edu.cn/" target="_blank" rel="noreferrer">Northeast Forestry University</a>.
-  </p>
-  <p>My research interests include:</p>
-  <ul class="interest-list">
-    <li><strong>Agentic AI</strong>, with a focus on agentic post-training, reasoning-centric reinforcement learning, and self-improving agents.</li>
-    <li><strong>Multimodal Large Language Models (MLLMs)</strong>, with a focus on multimodal reasoning, generation, and world understanding.</li>
-    <li><strong>AI for EDA</strong>, with a focus on large models for efficient, accurate, and automated EDA workflows.</li>
-  </ul>
-
-
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  ME ^_^
-
-education:
-- name: ShanghaiTech University
-  logo: /assets/images/badges/ShanghaiTech_FLAG.png
-  url: https://www.shanghaitech.edu.cn/
-  position: >- 
-    School of Information Science and Technology <br/>
-    M.S. Student
-  date: Sep. 2025 - Present
-- name: Northeast Forestry University
-  logo: /assets/images/badges/NEFU_FLAG.png
-  url: https://www.nefu.edu.cn/
-  position: B.Eng. in Computer Science
-  date: Sep. 2021 - Jun. 2025
-
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+  <p>I am an M.S. student at <a href="https://www.shanghaitech.edu.cn/" rel="noreferrer">ShanghaiTech University</a>, advised by <a href="https://true-genghao.github.io/genghao/" rel="noreferrer">Prof. Hao Geng</a>. Before that, I earned my B.Eng. in Computer Science from <a href="https://www.nefu.edu.cn/" rel="noreferrer">Northeast Forestry University</a>.</p>
+  <p>My research spans <strong>Agentic AI, Multimodal LLMs, and their applications in EDA</strong>. I focus on recursive self-improvement, agentic post-training, and personal agents.</p>
+  <p>I believe agents can learn to solve anything. What they learn through use should accumulate into lasting capabilities they can build on and apply to new tasks in both the digital and physical worlds. As people's goals change, how should agents decide what is worth learning next and which earlier lessons need updating?</p>
 
 awards:
 - name: University Scholarship, ShanghaiTech University
@@ -60,9 +18,5 @@ awards:
   date: 2023
 - name: Second Prize, Blue Bridge Cup Provincial Competition (C++ Group A)
   date: 2023
-# - name: Third Prize, Group Programming Ladder Tournament
-#   date: 2023
-# - name: Silver Medal, Baidu Star Provincial Competition
-#   date: 2023
 - name: University Scholarship, Northeast Forestry University
   date: 2023, 2022
