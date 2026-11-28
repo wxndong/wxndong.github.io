@@ -42,9 +42,9 @@ bibtex: |
 
 ## Abstract
 
-**Motivation and Problem.** Real OPC recipe development breaks both stationary agent memory and optimization over a fixed space. As hotspots emerge, engineers keep adding local rules for specific patterns, expanding the action space itself. Because fixing one hotspot often shifts the worst error elsewhere, scalar feedback and append-only memory misjudge working edits and reuse outdated lessons.
+**Motivation and Problem.** Industrial OPC recipes are not fixed parameter vectors. Process engineers combine global model settings with local pattern rules that grow as new lithography hotspots appear, expanding the action space under strict manufacturing constraints and costly commercial simulations. Because fixing one hotspot often shifts the limiting bottleneck elsewhere, scalar feedback and append-only memory misclassify working edits and reuse outdated engineering lessons.
 
-**Key Insight and Contribution.** Reliable test-time self-improvement in a shifting action space requires decoupling which recipes are accepted from how experience evolves. We diagnose each trial locally at fixed spatial gauges, then distill verified trial records into conditional engineering beliefs that can be revised as the recipe changes. A frozen LLM can thus continually improve both the OPC recipe and its own judgments without updating weights.
+**Key Insight and Contribution.** VPEvolve couples an executable Virtual Process Engineer harness with a self-evolving Skill Bank so a frozen LLM can co-evolve OPC recipes and engineering judgments through measured commercial trials. Recipe evolution translates hotspot diagnoses into global parameter edits and local correction rules, verifying physical constraints and keeping only feasible gains. Experience evolution reflects on every trial, accepted or rejected, to revise scoped beliefs against raw logs and guide the next targeted edit.
 
 </section>
 

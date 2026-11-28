@@ -253,13 +253,13 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .proj-teaser-caption {
-    margin: 1rem auto 0;
-    max-width: 900px;
+    margin: 1rem 0 0;
+    width: 100%;
     font-family: var(--font-display);
     font-size: 1.06rem;
     line-height: 1.58;
     color: var(--body);
-    text-align: center;
+    text-align: justify;
 }
 
 .proj-figure--md {
