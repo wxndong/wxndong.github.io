@@ -1,16 +1,23 @@
 {% assign item = include.item %}
 {% assign venue = item.venue_short %}
+{% assign project_url = item.links.Project %}
 {% assign paper_url = item.links.Paper %}
+{% assign primary_url = project_url | default: paper_url %}
+{% assign primary_external = true %}
+{% if primary_url %}
+    {% assign primary_prefix = primary_url | slice: 0, 1 %}
+    {% if primary_prefix == '/' %}{% assign primary_external = false %}{% endif %}
+{% endif %}
 <article class="paper{% unless item.cover %} paper--text-only{% endunless %}"{% if item.selected == true %} data-selected{% else %} hidden{% endif %}>
     {% if item.cover %}
-        {% if paper_url %}
-    <a class="paper-media" href="{{ paper_url }}" target="_blank" rel="noreferrer" aria-label="Paper: {{ item.title | escape }}">
+        {% if primary_url %}
+    <a class="paper-media" href="{% if primary_external %}{{ primary_url }}{% else %}{{ primary_url | relative_url }}{% endif %}" target="_blank" rel="noreferrer" aria-label="{% if project_url %}Project{% else %}Paper{% endif %}: {{ item.title | escape }}">
         {% else %}
     <div class="paper-media">
         {% endif %}
         <img src="{{ item.cover | relative_url }}" alt="{{ item.title | split: ':' | first | escape }} paper figure" loading="lazy"{% if item.cover_position %} style="object-position: {{ item.cover_position | escape }}"{% endif %}>
         <span class="paper-badge" aria-hidden="true">{{ venue }}</span>
-        {% if paper_url %}</a>{% else %}</div>{% endif %}
+        {% if primary_url %}</a>{% else %}</div>{% endif %}
     {% endif %}
     <div class="paper-details">
         <p class="paper-venue">{{ venue }}</p>
@@ -19,7 +26,13 @@
         <div class="paper-links" aria-label="Publication links">
             {% unless paper_url %}<span class="paper-link-placeholder" role="link" aria-disabled="true">Paper</span>{% endunless %}
             {% for link in item.links %}
-            <a href="{{ link[1] }}" target="_blank" rel="noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>
+                {% assign url = link[1] %}
+                {% assign first_char = url | slice: 0, 1 %}
+                {% if first_char == '/' %}
+            <a href="{{ url | relative_url }}" target="_blank" rel="noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>
+                {% else %}
+            <a href="{{ url }}" target="_blank" rel="noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>
+                {% endif %}
             {% endfor %}
         </div>
     </div>

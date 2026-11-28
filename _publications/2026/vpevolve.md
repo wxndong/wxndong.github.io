@@ -17,6 +17,6 @@ authors:
   - "Hao Geng#"
 links:
   Paper: https://arxiv.org/abs/2609.32473
-  Project: https://true-litianyi.github.io/VPEVOLVE/
   Code: https://github.com/True-Litianyi/VPEVOLVE_code
+  Project: /vpevolve/
 ---

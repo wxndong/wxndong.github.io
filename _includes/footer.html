@@ -1,3 +1,4 @@
 <footer class="site-footer shell">
-    <span>Last updated <time datetime="{{ site.data.profile.last_updated }}">{{ site.data.profile.last_updated | date: "%b %-d, %Y" }}</time></span>
+    <span>&copy; {{ site.time | date: "%Y" }} {{ site.data.profile.primary_name }}</span>
+    <span>Last updated <time datetime="{{ site.data.profile.last_updated | date: '%Y-%m' }}">{{ site.data.profile.last_updated | date: "%b %Y" }}</time></span>
 </footer>
