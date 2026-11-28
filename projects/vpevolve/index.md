@@ -34,7 +34,7 @@ bibtex: |
 ---
 
 <figure class="proj-figure proj-figure--teaser proj-figure--light">
-    <img src="{{ '/assets/images/projects/vpevolve/teaser.png' | relative_url }}" alt="From manual OPC recipe development to VPEvolve">
+    <img src="{{ '/assets/images/projects/vpevolve/teaser.png' | relative_url }}" width="1693" height="539" alt="From manual OPC recipe development to VPEvolve">
     <figcaption class="proj-teaser-caption"><strong>Co-evolving industrial OPC recipes and engineering judgments through commercial tool trials.</strong> VPEvolve combines an executable Virtual Process Engineer harness with an evolving Skill Bank. In 10 trials at 100% feasibility, it cuts Max EPE by 70.7% on Poly from 18.294 to 5.361 nm and by 28.8% on Metal1 from 22.052 to 15.692 nm.</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ bibtex: |
 ## Method
 
 <figure class="proj-figure proj-figure--light">
-    <img src="{{ '/assets/images/projects/vpevolve/method.png' | relative_url }}" alt="Recipe and experience evolution in VPEvolve">
+    <img src="{{ '/assets/images/projects/vpevolve/method.png' | relative_url }}" width="1112" height="427" alt="Recipe and experience evolution in VPEvolve">
 </figure>
 
 The Actor, Reflector, and Curator share one frozen LLM. A candidate replaces the retained recipe only when EPE improves with zero MRC or SRAF violations and PVB within +2% of R0, while every trial drives three coupled mechanisms.
@@ -67,7 +67,7 @@ The Actor, Reflector, and Curator share one frozen LLM. A candidate replaces the
 ### Evolution Dynamics
 
 <figure class="proj-figure">
-    <img src="{{ '/assets/images/projects/vpevolve/evolution_dynamics.gif' | relative_url }}" alt="10-trial measured evolution on a dense Metal1 layout">
+    <img src="{{ '/assets/images/projects/vpevolve/evolution_dynamics.gif' | relative_url }}" width="1120" height="470" alt="10-trial measured evolution on a dense Metal1 layout">
 </figure>
 
 Over 10 measured trials on a dense Metal1 window, VPEvolve first tunes global parameters to bring down baseline error, then dynamically synthesizes and refines targeted local rules whenever the limiting hotspot migrates. The trajectory cuts Max EPE by 34.5% from 22.78 to 14.91 nm while maintaining zero violations throughout.
@@ -129,7 +129,7 @@ Freezing online experience degrades Poly Max EPE from 5.361 to 8.082 nm, and rem
 ### Cross-Model Generalization
 
 <figure class="proj-figure proj-figure--light">
-    <img src="{{ '/assets/images/projects/vpevolve/cross_model.png' | relative_url }}" alt="VPEvolve generalization across six LLM families">
+    <img src="{{ '/assets/images/projects/vpevolve/cross_model.png' | relative_url }}" width="2032" height="989" alt="VPEvolve generalization across six LLM families">
 </figure>
 
 Swapping all three roles across six frontier LLM families consistently improves Max and Mean EPE over R0 on both layers, showing that the gains stem from the evolution framework rather than a single backbone model.
@@ -137,7 +137,7 @@ Swapping all three roles across six frontier LLM families consistently improves 
 ### Long-Horizon Evolution
 
 <figure class="proj-figure proj-figure--light">
-    <img src="{{ '/assets/images/projects/vpevolve/long_horizon.png' | relative_url }}" alt="100-trial long-horizon recipe evolution">
+    <img src="{{ '/assets/images/projects/vpevolve/long_horizon.png' | relative_url }}" width="1674" height="393" alt="100-trial long-horizon recipe evolution">
 </figure>
 
 Over 100 trials, evolving experience keeps driving Max EPE down to 4.477 nm on Poly and 10.912 nm on Metal1 while cutting PVB by 6.01% and 8.13%, whereas Frozen Experience stalls and terminates at trial 57 on Metal1.

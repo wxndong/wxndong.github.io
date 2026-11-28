@@ -3,7 +3,7 @@
     src: url("../fonts/newsreader-latin.woff2") format("woff2");
     font-weight: 400 600;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 :root {

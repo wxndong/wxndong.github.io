@@ -37,7 +37,7 @@ bibtex: |
 ---
 
 <figure class="proj-figure proj-figure--teaser proj-figure--light">
-    <video autoplay loop muted playsinline preload="auto" poster="{{ '/assets/images/projects/unimrc/teaser_poster.png' | relative_url }}">
+    <video autoplay loop muted playsinline preload="auto" width="1280" height="620" poster="{{ '/assets/images/projects/unimrc/teaser_poster.png' | relative_url }}">
         <source src="{{ '/assets/images/projects/unimrc/teaser.mp4' | relative_url }}" type="video/mp4">
     </video>
     <figcaption class="proj-teaser-caption"><strong>One differentiable score field unifies verification and mask optimization.</strong> By representing curvilinear and Manhattan contours as point clouds, fusing them with continuous rule queries, and enforcing monotonic violation scores, UniMRC turns discrete rule checking into smooth gradients for inverse lithography.</figcaption>
@@ -56,7 +56,7 @@ bibtex: |
 ## Method
 
 <figure class="proj-figure proj-figure--light">
-    <img src="{{ '/assets/images/projects/unimrc/method.png' | relative_url }}" alt="Overview of the UniMRC multimodal architecture">
+    <img src="{{ '/assets/images/projects/unimrc/method.png' | relative_url }}" width="2090" height="683" alt="Overview of the UniMRC multimodal architecture">
 </figure>
 
 **Contour Support.** Unifies curvilinear and Manhattan masks into dense boundary point clouds, preserving both fine curvature and sharp corner geometry without rasterization blur.
@@ -95,13 +95,13 @@ On the 17,800 Curvilinear Large test layouts, UniMRC outperforms every adapted p
 </div>
 
 <figure class="proj-figure proj-figure--light proj-figure--md">
-    <img src="{{ '/assets/images/projects/unimrc/qualitative.png' | relative_url }}" alt="Qualitative violation predictions on curvilinear and Manhattan layouts">
+    <img src="{{ '/assets/images/projects/unimrc/qualitative.png' | relative_url }}" width="1946" height="1294" alt="Qualitative violation predictions on curvilinear and Manhattan layouts">
 </figure>
 
 On rounded line ends, dense curvilinear shapes, and Manhattan corners, UniMRC localizes boundary violations precisely against ground truth with virtually no stray boundary alarms.
 
 <figure class="proj-figure proj-figure--light proj-figure--md">
-    <img src="{{ '/assets/images/projects/unimrc/runtime.png' | relative_url }}" alt="Runtime comparison across four benchmark settings">
+    <img src="{{ '/assets/images/projects/unimrc/runtime.png' | relative_url }}" width="1947" height="1158" alt="Runtime comparison across four benchmark settings">
 </figure>
 
 Across all four benchmark settings, UniMRC runs over 10× faster than commercial Calibre, taking 2.41 s per rule category on Curvilinear Medium and 120.2 s on Curvilinear Large compared with 1,440 s for Calibre.
